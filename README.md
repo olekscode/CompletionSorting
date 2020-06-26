@@ -8,7 +8,7 @@ The idea with using N-grams for sorting is to get completions that are most like
 
 ## Setup Info
 In order to load the repo and its dependencies, execute:
-```{Smalltalk}
+```Smalltalk
 Metacello new
   baseline: 'CompletionSorting';
   repository: 'github://myroslavarm/CompletionSorting/src';
