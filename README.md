@@ -11,7 +11,7 @@ In order to load the repo and its dependencies, execute:
 ```{Smalltalk}
 Metacello new
   baseline: 'CompletionSorting';
-  repository: 'github://myroslavarm/CompletionSorting/';
+  repository: 'github://myroslavarm/CompletionSorting/src';
   load.
 ```
 
@@ -23,7 +23,7 @@ the unigram approach where we take into consideration the number of token occure
 ### Bigram based code completion
 the results are sorted based on the probability of them occuring given a previous history word, i.e. (occurences of the token before followed by the token being completed / total occurences of the token before), such as:
 
-![example](https://github.com/myroslavarm/CompletionSorting/blob/master/example.PNG)
+![example](figures/example.png)
 
 The bigram model is trained using the Pharo N-gram library https://github.com/pharo-ai/NgramModel.
 
